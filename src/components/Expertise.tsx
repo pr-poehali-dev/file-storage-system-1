@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { MapPin, ShieldCheck, Banknote, Key } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
-    icon: Home,
+    title: "Выгодное расположение",
+    description: "ЖК «Друг» находится в развитом районе Краснодара с удобным выездом на КАД, рядом — школы, детские сады, магазины и парки.",
+    icon: MapPin,
   },
   {
-    title: "Коммерческие объекты",
+    title: "Надёжность застройщика",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
+      "АльфаСтройИнвест — аккредитованный застройщик с 15-летним опытом. Все объекты сдаются в срок без скрытых доплат.",
+    icon: ShieldCheck,
   },
   {
-    title: "Дизайн интерьеров",
+    title: "Ипотека от 5,9%",
     description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+      "Работаем с ведущими банками России. Помогаем подобрать выгодную ипотечную программу, в том числе семейную и с господдержкой.",
+    icon: Banknote,
   },
   {
-    title: "Градостроительство",
+    title: "Квартиры с отделкой",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Чистовая отделка «под ключ» в стоимости квартиры. Заезжайте и живите — без ремонта, пыли и лишних трат.",
+    icon: Key,
   },
 ]
 
@@ -57,14 +57,14 @@ export function Expertise() {
     <section id="services" ref={sectionRef} className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-20">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
+          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Почему мы</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Преимущества</HighlightedText>, которые
             <br />
-            практикой
+            важны
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            Каждая деталь ЖК «Друг» создана так, чтобы жизнь здесь была комфортной, безопасной и радостной с первого дня.
           </p>
         </div>
 
